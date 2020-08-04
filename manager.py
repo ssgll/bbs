@@ -28,3 +28,5 @@ migrate.init_app(app=app, db=db)
 # 添加迁移脚本命令行
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
+
+manager.run()
